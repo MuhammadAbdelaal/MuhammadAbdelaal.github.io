@@ -1,0 +1,632 @@
+/* My colors:
+
+SEA BLUE: #05668D
+OUTER SPACE: #424B54
+ANTI-FLASH WHITE: #EBF2FA
+STRAW: #E1CE7A
+NEON CARROT: #F49E4C
+*/
+
+/*
+Colors from the Tutorial:
+
+Black: #191716
+White: #e0e2db
+Yellow: #e6af2e
+Gray: #efece4
+*/
+
+/*########################### navbar ######################*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*navbar*/
+#nav {
+    list-style-type: none;
+    border-top: 6px solid #e6af2e;
+    background-color: #191716;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 25px;
+    color: #e6af2e;
+}
+
+#item-container {
+    display: none;
+}
+
+nav ul li a:active {
+    color: #e0e2db;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: #e6af2e;
+    color: #191716;
+    font-style: italic;
+}
+
+.logo .fas {
+    margin: 3px 0 0 10px;
+}
+
+.logo:active {
+    background-color: #e0e2db;
+    color: #e6af2e;
+}
+
+/*media for navbar on big screens*/
+@media screen and (min-width: 970px) {
+
+    #item-container {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        flex: 1 0 auto;
+        list-style-type: none;
+    }
+
+    nav ul li a:hover {
+        color: #e0e2db;
+
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+    }
+
+    .logo:hover {
+        background-color: #e0e2db;
+        color: #e6af2e;
+    }
+
+    .logo .fas {
+        display: none;
+    }
+}
+
+/*########################### end of navbar ######################*/
+
+
+/*########################### banner ######################*/
+#banner {
+    min-height: 90vh;
+    background: linear-gradient(-60deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.9)),
+        url(images/code-laptop.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #e0e2db;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner-objective {
+    width: 85vw;
+    margin: 0 auto 20px auto;
+    background: linear-gradient(-60deg, rgb(255, 255, 255), rgb(255, 255, 255, 0.65));
+    color: #424B54;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: justify;
+    padding: 12px;
+    transition: all 200ms ease-in-out;
+}
+
+.banner-objective:hover {
+    box-shadow: 0 2px 25px rgba(230, 175, 46, 0.69);
+    padding-bottom: 11.9px;
+    border-radius: 2px;
+}
+
+.banner-objective span {
+    color: #e6af2e;
+    text-transform: uppercase;
+}
+
+.banner-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-btn button {
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    background: transparent;
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+    font-weight: bold;
+}
+
+.banner-btn button:active {
+    color: #e0e2db;
+    background-color: #e6af2e;
+}
+
+/*media for banner*/
+@media screen and (min-width: 776px) {
+
+    .banner-text {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .banner-objective {
+        width: 75vw;
+        letter-spacing: 4px;
+    }
+
+    .banner-btn {
+        justify-content: space-around;
+    }
+
+    .banner-btn button {
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+    .banner-btn button:hover {
+        color: #e0e2db;
+        background-color: #e6af2e;
+    }
+}
+
+/*########################### end of banner ######################*/
+
+/*##################### skills section #########################*/
+#skills {
+    padding: 60px 0;
+    background-color: #efece4;
+}
+
+.skills-container {
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.skills-item {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.skills-item .fa,
+.skills-item .fab,
+.skills-item .far {
+    font-size: 60px;
+    color: #191716;
+}
+
+.skills-item .bootstrap {
+    border: 4px solid #191716;
+    line-height: 42px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 55px;
+}
+
+.skills-item h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 10px 0;
+    color: #e6af2ef2;
+    text-transform: uppercase;
+}
+
+.skills-item p {
+    width: 75%;
+    margin: 0 auto;
+    color: #191716;
+}
+
+/*media for skills section on medium screens*/
+@media screen and (min-width: 776px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+}
+
+/*media for skills section on large screens*/
+@media screen and (min-width: 999px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 5px;
+    }
+}
+
+/*################### end of skills section #####################*/
+
+/*###################### Services section ##########################*/
+
+/*title*/
+.title {
+    margin: 40px 0;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 40px;
+    color: #e0e2db;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    width: 250px;
+    border: 3px solid #e6af2e;
+    margin: 0 auto;
+}
+
+/*end of title*/
+
+/*services*/
+#services {
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+        url(images/code-laptop.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0 20px 0;
+}
+
+.services-container {
+    max-width: 90vw;
+    margin: 0 auto;
+    color: #e0e2db;
+}
+
+.service-item {
+    overflow: hidden;
+    position: relative;
+    padding: 60px;
+}
+
+.service-item .fa,
+.service-item .fas {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #e6af2e;
+}
+
+.service-item-black {
+    background: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7));
+}
+
+.service-item-white {
+    background: linear-gradient(rgb(206, 208, 206, 0.8), rgb(206, 208, 206, 0.8));
+    color: #191716;
+}
+
+.front-text {
+    text-align: center;
+    transition: transform 2s;
+}
+
+.back-text {
+    position: absolute;
+    bottom: -15em;
+    width: 75%;
+    height: 100%;
+    transition: bottom 2s;
+    padding: 30px 0;
+}
+
+.back-text h1 {
+    margin-bottom: 20px;
+}
+
+.back-text button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #e6af2e;
+    font-size: 20px;
+    color: #e6af2e;
+}
+
+.back-text button:active {
+    background-color: #e6af2e;
+    color: #191617;
+}
+
+.service-item-white button {
+    background-color: #e6af2e;
+    color: #191716;
+}
+
+.service-item-white button:active {
+    background-color: #191716;
+    border-color: #191716;
+    color: #e6af2e;
+}
+
+.service-item:hover .front-text {
+    transform: translateY(-180px);
+}
+
+.service-item:hover .back-text {
+    bottom: 0;
+}
+
+/*media for services section*/
+@media screen and (min-width: 776px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+    }
+
+    /*change the original order of service items*/
+    .services-container .service-item:nth-of-type(1) {
+        order: 1;
+    }
+
+    .services-container .service-item:nth-of-type(2) {
+        order: 2;
+    }
+
+    .services-container .service-item:nth-of-type(3) {
+        order: 4;
+    }
+
+    .services-container .service-item:nth-of-type(4) {
+        order: 3;
+    }
+
+    .back-text button:hover {
+        background-color: #e6af2e;
+        color: #191617;
+    }
+
+    .service-item-white button:hover {
+        background-color: #191716;
+        border-color: #191716;
+        color: #e6af2e;
+    }
+
+}
+
+/*################### end of Services section ######################*/
+
+
+/*#################### projects section ###################*/
+#projects .title-text {
+    color: #191716;
+}
+
+
+#projects {
+    padding: 20px 0 80px 0;
+    background-color: #e0e2db;
+}
+
+.projects-container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.project-item {
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8));
+    color: #e0e2db;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+#projects img {
+    width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 4s;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 18px;
+    color: #e6af2e;
+    opacity: 0;
+    transition: opacity 4s;
+}
+
+.img-text h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.img-text h6 {
+    font-size: 15px;
+}
+
+.project-item:hover img {
+    opacity: 0.3;
+    transform: scale(1.7);
+}
+
+.project-item:hover .img-text,
+.project-item:hover .img-footer {
+    opacity: 1;
+}
+
+
+/*media for projects section*/
+@media screen and (min-width: 676px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1em;
+    }
+}
+
+@media screen and (min-width: 999px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1em;
+    }
+}
+
+/*################ end of projects section ###################*/
+
+
+/*################ filler contact section ###################*/
+#filler-contact {
+    background: linear-gradient(-60deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.9)),
+        url(images/code-laptop.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+#filler-contact h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #e0e2db;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+#filler-contact button {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #e6af2e;
+    border: 2px solid #e6af2e;
+    padding: 10px 15px;
+    background: transparent;
+}
+
+#filler-contact button:active {
+    background: #e6af2e;
+    color: #191716;
+}
+
+/*media for filler-contact section*/
+@media screen and (min-width: 676px) {
+    #filler-contact {
+        padding: 60px 150px;
+    }
+
+    #filler-contact h1 {
+        font-size: 40px;
+    }
+
+    #filler-contact button {
+        font-size: 30px;
+    }
+
+    #filler-contact button:hover {
+        background: #e6af2e;
+        color: #191716;
+    }
+}
+
+/*################ end of filler contact section ###################*/
+
+
+/*################ space section ###################*/
+#space {
+    height: 100px;
+    width: 100%;
+    background: #e0e2db;
+}
+
+/*################ end of space section ###################*/
+
+
+/*################ footer section ###################*/
+#footer {
+    background-color: #191716;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-text {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #e0e2db;
+    margin-bottom: 10px;
+}
+
+.footer-icons {
+    font-size: 30px;
+}
+
+.footer-icons .fab {
+    margin-right: 10px;
+    color: #e0e2db;
+    transition: transform 1s;
+}
+
+.footer-icons .fab:hover {
+    color: #e6af2e;
+    transform: translateY(-8px);
+}
+
+/*################ end of footer section ###################*/
