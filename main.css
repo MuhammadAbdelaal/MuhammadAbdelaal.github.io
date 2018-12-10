@@ -487,8 +487,8 @@ nav ul li a {
     box-shadow: 5px 5px 5px rgba(230, 175, 46, 0.78);
 }
 
-.footer-website a:hover,
-.footer-github a:hover {
+.footer-website a:active,
+.footer-github a:active {
     color: #e0e2db;
     background: rgba(230, 175, 46, 0.78);
 }
@@ -527,6 +527,12 @@ nav ul li a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 1em;
+    }
+
+    .footer-website a:hover,
+    .footer-github a:hover {
+        color: #e0e2db;
+        background: rgba(230, 175, 46, 0.78);
     }
 }
 
