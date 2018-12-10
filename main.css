@@ -538,7 +538,7 @@ nav ul li a:active {
     align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 60px;
+    padding: 60px 30px;
 }
 
 #filler-contact h1 {
