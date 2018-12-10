@@ -476,7 +476,21 @@ nav ul li a {
     font-size: 18px;
     color: #e6af2e;
     opacity: 0;
-    transition: opacity 4s;
+    transition: opacity 2s;
+}
+
+.footer-website a,
+.footer-github a {
+    color: #e6af2e;
+    text-decoration: none;
+    padding: 0 5px 5px 5px;
+    box-shadow: 5px 5px 5px rgba(230, 175, 46, 0.78);
+}
+
+.footer-website a:hover,
+.footer-github a:hover {
+    color: #e0e2db;
+    background: rgba(230, 175, 46, 0.78);
 }
 
 .img-text h1 {
