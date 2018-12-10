@@ -160,7 +160,7 @@ nav ul li a:active {
 
 .banner-btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .banner-btn button {
@@ -190,10 +190,6 @@ nav ul li a:active {
     .banner-objective {
         width: 75vw;
         letter-spacing: 4px;
-    }
-
-    .banner-btn {
-        justify-content: space-around;
     }
 
     .banner-btn button {
@@ -526,8 +522,8 @@ nav ul li a:active {
 /*################ end of projects section ###################*/
 
 
-/*################ filler contact section ###################*/
-#filler-contact {
+/*################ contact section ###################*/
+#contact {
     background: linear-gradient(-60deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.9)),
         url(images/code-laptop.jpg);
     background-attachment: fixed;
@@ -541,7 +537,7 @@ nav ul li a:active {
     padding: 60px 30px;
 }
 
-#filler-contact h1 {
+#contact h1 {
     font-size: 32px;
     text-transform: uppercase;
     color: #e0e2db;
@@ -550,7 +546,7 @@ nav ul li a:active {
     font-weight: 100;
 }
 
-#filler-contact button {
+#contact button {
     font-size: 25px;
     text-transform: uppercase;
     color: #e6af2e;
@@ -559,32 +555,32 @@ nav ul li a:active {
     background: transparent;
 }
 
-#filler-contact button:active {
+#contact button:active {
     background: #e6af2e;
     color: #191716;
 }
 
-/*media for filler-contact section*/
+/*media for contact section*/
 @media screen and (min-width: 676px) {
-    #filler-contact {
+    #contact {
         padding: 60px 150px;
     }
 
-    #filler-contact h1 {
+    #contact h1 {
         font-size: 40px;
     }
 
-    #filler-contact button {
+    #contact button {
         font-size: 30px;
     }
 
-    #filler-contact button:hover {
+    #contact button:hover {
         background: #e6af2e;
         color: #191716;
     }
 }
 
-/*################ end of filler contact section ###################*/
+/*################ end of contact section ###################*/
 
 
 /*################ space section ###################*/
@@ -615,18 +611,32 @@ nav ul li a:active {
 }
 
 .footer-icons {
-    font-size: 30px;
+    font-size: 35px;
 }
 
-.footer-icons .fab {
+.footer-icons .fab,
+.footer-icons .fas {
     margin-right: 10px;
     color: #e0e2db;
     transition: transform 1s;
 }
 
-.footer-icons .fab:hover {
+.footer-icons .fab:hover,
+.footer-icons .fas:hover {
     color: #e6af2e;
     transform: translateY(-8px);
+}
+
+/*media for footer section*/
+@media screen and (min-width: 676px) {
+
+    .footer-text {
+        font-size: 18px;
+    }
+
+    .footer-icons {
+        font-size: 45px;
+    }
 }
 
 /*################ end of footer section ###################*/
