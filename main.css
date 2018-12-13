@@ -47,8 +47,14 @@ nav ul li a {
     transition: all .3s ease;
 }
 
-#item-container {
-    display: none;
+.nav-items-hide {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.nav-items-show {
+    height: 17.6em;
 }
 
 .nav-item a:active {
@@ -72,10 +78,10 @@ nav ul li a {
 
 
 /*media for navbar on big screens*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 999px) {
 
-    #item-container {
-        display: block;
+    #nav-items {
+        height: inherit;
     }
 
     nav ul {
