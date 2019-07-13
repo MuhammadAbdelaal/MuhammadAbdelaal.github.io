@@ -66,7 +66,7 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 26px;
     background-color: #e6af2e;
     color: #191716;
     font-style: italic;
@@ -130,7 +130,7 @@ nav ul li a {
 }
 
 .banner-text {
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     color: #e0e2db;
     font-style: italic;
@@ -241,7 +241,7 @@ nav ul li a {
     font-size: 55px;
 }
 
-.skills-item h1 {
+.skills-item h2 {
     font-size: 30px;
     letter-spacing: 2px;
     margin: 10px 0;
@@ -284,14 +284,14 @@ nav ul li a {
 
 .title-text {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #e0e2db;
     font-style: italic;
     text-transform: uppercase;
 }
 
 .title-underline {
-    width: 250px;
+    width: 200px;
     border: 3px solid #e6af2e;
     margin: 0 auto;
 }
@@ -352,7 +352,7 @@ nav ul li a {
     padding: 30px 0;
 }
 
-.back-text h1 {
+.back-text h3 {
     margin-bottom: 20px;
 }
 
@@ -477,9 +477,9 @@ nav ul li a {
     width: 100%;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 5px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 14px;
     color: #e6af2e;
     opacity: 0;
     transition: opacity 2s;
@@ -489,17 +489,22 @@ nav ul li a {
 .footer-github a {
     color: #e6af2e;
     text-decoration: none;
-    padding: 0 5px 5px 5px;
-    box-shadow: 5px 5px 5px rgba(230, 175, 46, 0.78);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.footer-website a,
+.footer-github a {
+    border: solid 1px rgba(230, 175, 46, 0.4);
 }
 
 .footer-website a:active,
 .footer-github a:active {
     color: #e0e2db;
-    background: rgba(230, 175, 46, 0.78);
+    background-color: rgba(230, 175, 46, 0.4);
 }
 
-.img-text h1 {
+.img-text h3 {
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -535,10 +540,24 @@ nav ul li a {
         grid-column-gap: 1em;
     }
 
+    .footer-website a,
+    .footer-github a {
+        color: #e6af2e;
+        text-decoration: none;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .footer-website a,
+    .footer-github a {
+        border: solid 0.5px rgba(230, 175, 46, 0.4);
+    }
+
     .footer-website a:hover,
     .footer-github a:hover {
         color: #e0e2db;
-        background: rgba(230, 175, 46, 0.78);
+        background-color: rgba(230, 175, 46, 0.4);
     }
 }
 
@@ -560,8 +579,8 @@ nav ul li a {
     padding: 60px 30px;
 }
 
-#contact h1 {
-    font-size: 32px;
+#contact h2 {
+    font-size: 25px;
     text-transform: uppercase;
     color: #e0e2db;
     margin-bottom: 10px;
@@ -570,11 +589,11 @@ nav ul li a {
 }
 
 #contact button {
-    font-size: 25px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #e6af2e;
-    border: 2px solid #e6af2e;
-    padding: 10px 15px;
+    border: 1px solid #e6af2e;
+    padding: 5px 10px;
     background: transparent;
 }
 
@@ -589,17 +608,19 @@ nav ul li a {
         padding: 60px 150px;
     }
 
-    #contact h1 {
-        font-size: 40px;
+    #contact h2 {
+        font-size: 38px;
     }
 
     #contact button {
         font-size: 30px;
+        border: 2px solid #e6af2e;
+        padding: 10px 15px;
     }
 
     #contact button:hover {
         background: #e6af2e;
-        color: #191716;
+        color: #fff;
     }
 }
 
