@@ -16,7 +16,9 @@ Yellow: #e6af2e
 Gray: #efece4
 */
 
-/*########################### navbar ######################*/
+
+/*###########  Global Styling ################*/
+
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +29,29 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*title*/
+.title {
+    margin-bottom: 40px;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 30px;
+    color: #e0e2db;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.title-underline {
+    width: 200px;
+    border: 3px solid #e6af2e;
+    margin: 0 auto;
+}
+
+/*end of title*/
+/*############ end of global styling */
+
+/*########################### navbar ######################*/
 /*navbar*/
 #nav {
     list-style-type: none;
@@ -277,37 +302,15 @@ nav ul li a {
 
 /*###################### Services section ##########################*/
 
-/*title*/
-.title {
-    margin: 40px 0;
-}
-
-.title-text {
-    text-align: center;
-    font-size: 30px;
-    color: #e0e2db;
-    font-style: italic;
-    text-transform: uppercase;
-}
-
-.title-underline {
-    width: 200px;
-    border: 3px solid #e6af2e;
-    margin: 0 auto;
-}
-
-/*end of title*/
-
 /*services*/
 #services {
-    min-height: 100vh;
     background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
         url(images/code-laptop.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 0 20px 0;
+    padding: 40px 0;
 }
 
 .services-container {
@@ -431,15 +434,16 @@ nav ul li a {
 
 
 /*#################### projects section ###################*/
+
+#projects {
+    padding: 40px 0 0;
+    background-color: #e0e2db;
+}
+
 #projects .title-text {
     color: #191716;
 }
 
-
-#projects {
-    padding: 20px 0 80px 0;
-    background-color: #e0e2db;
-}
 
 .projects-container {
     max-width: 90vw;
@@ -527,17 +531,27 @@ nav ul li a {
 /*media for projects section*/
 @media screen and (min-width: 676px) {
     .projects-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 96vw;
+    }
+
+    .project-item {
+        max-width: 45%;
+        margin: 0 10px 40px;
     }
 }
 
 @media screen and (min-width: 999px) {
+
     .projects-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 1em;
+        justify-content: center;
+        max-width: 96.5vw;
+    }
+
+    .project-item {
+        width: 30%;
     }
 
     .footer-website a,
