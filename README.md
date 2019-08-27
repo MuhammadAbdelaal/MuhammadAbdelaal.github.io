@@ -1,2 +1,2 @@
-# MyPortfolio-v1
-Version 1 of My Portfolio
+# MyPortfolio-v2
+Version 2 of My Portfolio
