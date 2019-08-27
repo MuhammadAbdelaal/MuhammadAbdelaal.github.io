@@ -2,345 +2,305 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="I am a Self-Study Web Developer interested in Computer Science in terms of programming and security. I studied basic programming concepts and engineering, and have experience in Front-End development using HTML5, CSS3, JavaScript, Object-Oriented JavaScript, Bootstrap4, jQuery, Git, and GitHub. I am currently studying and training on Angular, PHP, SQL, and back-end technologies, for the purpose of development and to become a Full-Stack Web Developer! My biggest strengths in this field are troubleshooting & problem-solving, and continuous self-learning.I also have some basic knowledge in Java language, in the Android Environment.">
-    <meta name="keywords" content="Web Developer, Front-End Web Developer, Back-End Web Developer, Full-Stack Web Developer, Frontend Developer, Backend Developer, Fullstack Developer, PHP Developer, Javascript Developer">
-    <title>Muhammad Reda - Web Developer</title>
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-    <!-- Main Css -->
-    <link rel="stylesheet" href="main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>M.Reda - Portfolio Template</title>
+    <!--  Stylesheet  -->
+    <link rel="stylesheet" href="styles.css">
+    <!--  Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--    Font Awesome -->
+    <script src="font-awesome.js"></script>
 </head>
 
 <body>
-    <!--navbar-->
-    <nav>
-        <ul id="nav">
-            <li>
-                <a href="#" class="logo">Muhammad Reda<i id="fa-button" class="fas fa-bars"></i></a>
-            </li>
-            <li>
-                <div id="nav-items" class="nav-items-hide">
+    <!-- Home Section -->
+    <section class="home">
+        <div class="trans-background">
+            <!--navbar-->
+            <nav class="nav">
+                <div class="nav-button-div">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <a href="index.html">M.Reda</a>
+                </div>
+                <div class="nav-right">
                     <ul>
-                        <li class="nav-item"><a href="">Home</a></li>
-                        <li class="nav-item"><a href="#skills">Skills</a></li>
-                        <li class="nav-item"><a href="#services">Services</a></li>
-                        <li class="nav-item"><a href="#projects">Projects</a></li>
-                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-            </li>
-        </ul>
-    </nav>
-    <!--end of navbar-->
-
-    <!--banner-->
-    <header id="banner">
-        <div class="banner-title">
-            <h1 class="banner-text">Web Developer</h1>
-            <p class="banner-objective">
-                Being driven by my passion in computer science & software building and design for web applications, my goal is to go beyond the limitations of problems and find the best ideal solutions in Web Development and always enhance these solutions to meet customer satisfaction and beyond! <br />
-                <em>To conclude</em>, when it comes to programming,
-                <span>the sky is my limit</span>.
-            </p>
-            <div class="banner-btn">
-                <a href="mailto:trans.muhammad@gmail.com"><button type="button">Email me now!</button></a>
+            </nav>
+            <div class="welcome-message">
+                <span>Hello i'm</span>
+                <h1>Muhammad Reda</h1>
+                <p>Professional Web Developer</p>
             </div>
-        </div>
-    </header>
-    <!--end of banner-->
-
-    <!--skills section-->
-    <section id="skills">
-        <div class="skills-container">
-            <!--article-->
-            <article class="skills-item">
-                <i class="fab fa-js"></i>
-                <h2>JavaScript</h2>
-                <p>
-                    I can comfortably use JavaScript to make Websites and Web Applications using Vanilla
-                    JavaScript, ES5, ES6, ES7, ES8, AJAX, React.js, and Node.js.
-                </p>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="skills-item">
-                <i class="fab fa-html5"></i>
-                <h2>HTML5</h2>
-                <p>
-                    Using HTML5/XHTML to markup web pages seeking always to follow best
-                    practices, and using semantic elements.
-                </p>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="skills-item">
-                <i class="fab fa-css3"></i>
-                <h2>CSS3</h2>
-                <p>
-                    The beauty of the web can never be achieved without CSS. That is why
-                    I give myself enough time to create attractive and responsive
-                    websites, following design guidelines, and using flexbox & CSS grid
-                    as needed.
-                </p>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="skills-item">
-                <i class="fab bootstrap">B</i>
-                <h2>Bootstrap</h2>
-                <p>
-                    By adding Bootstrap to my skills list, it increased the possibilities
-                    of making responsive websites fast and effectively.
-                </p>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="skills-item">
-                <i class="fab fa-github-square"></i>
-                <h2>GitHub</h2>
-                <p>
-                    Git & GitHub is one of the first skills that I learned and
-                    continuously using during my work to organize work and control
-                    different version of the project.
-                </p>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="skills-item">
-                <i class="fab fa-php"></i>
-                <h2>PHP</h2>
-                <p>
-                    I can comfortably use PHP to create dynamic web
-                    apps using native PHP or Laravel framework as a back-end technology.
-                </p>
-            </article>
-            <!--end of article-->
         </div>
     </section>
-    <!--end of skills section-->
-
-    <!--services section-->
-    <section id="services">
-        <!-- title-->
-        <div class="title">
-            <div class="title-text">
-                <h2>Services</h2>
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-left">
+            <div class="about-img-container">
+                <div class="about-img-shadow"></div>
+                <img src="img/about/profile.jpg" alt="profile">
+                <div class="about-img-cover">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
             </div>
-            <div class="title-underline"></div>
         </div>
-        <!-- end of title-->
-
+        <div class="about-right">
+            <div class="about-body">
+                <h2><span>I</span>HELLO,</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="hr"></div>
+                <ul>
+                    <li><span>Name: </span>Rdam smith</li>
+                    <li><span>Job Title: </span>UI/UX Designer</li>
+                    <li><span>Age: </span>26 Year</li>
+                    <li><span>Location: </span>United States, US</li>
+                    <li><span>Freelance: </span>Available</li>
+                    <li><span>E-mail: </span>Nadia420@gmail.com</li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+            <div class="clr"></div>
+            <div class="about-footer">
+                <button>Download CV <i class="fas fa-download"></i></button>
+                <button>Hire Me <i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </section>
+    <!--  Services Section -->
+    <section class="services">
         <div class="services-container">
-            <!--article-->
-            <article class="service-item service-item-black">
-                <div class="front-text">
-                    <i class="fa fa-cogs"></i>
-                    <h3>Web Development</h3>
-                </div>
-                <div class="back-text">
-                    <h3>Web Development</h3>
-                    <p>
-                        Using JavaScript, HTML, CSS, Bootstrap, and React for the
-                        Front-End development; and Node.js for the backend.
-                    </p>
-                    <a href="mailto:trans.muhammad@gmail.com"><button type="button">Email me now!</button></a>
-                </div>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="service-item service-item-white">
-                <div class="front-text">
-                    <i class="fas fa-laptop"></i>
-                    <h3>Responsive Websites</h3>
-                </div>
-                <div class="back-text">
-                    <h3>Responsive Websites</h3>
-                    <p>
-                        No matter the platform you are targeting, I design your website to
-                        be responsive on PCs, laptops, tablets, and mobile phones.
-                    </p>
-                    <a href="mailto:trans.muhammad@gmail.com"><button type="button">Email me now!</button></a>
-                </div>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="service-item service-item-black">
-                <div class="front-text">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Mobile Apps</h3>
-                </div>
-                <div class="back-text">
-                    <h3>Native Mobile Apps</h3>
-                    <p>
-                        Want a mobile application that works on Android and Apple
-                        platforms! Just contact me and I have the ideal solutions for you.
-                    </p>
-                    <a href="mailto:trans.muhammad@gmail.com"><button type="button">Email me now!</button></a>
-                </div>
-            </article>
-            <!--end of article-->
-
-            <!--article-->
-            <article class="service-item service-item-white">
-                <div class="front-text">
-                    <i class="fas fa-question"></i>
-                    <h3>Consulting</h3>
-                </div>
-                <div class="back-text">
-                    <h3>Don't know what you need!</h3>
-                    <p>
-                        Just hit on CONTACT ME button, and email me your idea. I will
-                        contact you to discuss everything in details.
-                    </p>
-                    <a href="mailto:trans.muhammad@gmail.com"><button type="button">Email me now!</button></a>
-                </div>
-            </article>
-            <!--end of article-->
-        </div>
-    </section>
-    <!--end of services section-->
-
-    <!-- projects section -->
-    <section id="projects">
-        <!-- title-->
-        <div class="title">
-            <div class="title-text">
-                <h2>Projects</h2>
+            <div class="h2-div">
+                <h2 class="h2">Our Services</h2>
             </div>
-            <div class="title-underline"></div>
-        </div>
-        <!-- end of title -->
-
-        <div class="projects-container">
-            <!-- item -->
-            <article class="project-item">
-                <img src="images/slider-01.jpg" alt="image" />
-                <div class="img-text">
-                    <h3>Portfolio Template</h3>
-                    <h6>Fully responsive design, with pure HTML and CSS</h6>
+            <div class="services-body">
+                <div class="service">
+                    <i class="fas fa-pencil-ruler icon"></i>
+                    <h3>UI/UX DESIGN</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</P>
                 </div>
-                <div class="img-footer">
-                    <div class="footer-website">
-                        <a href="https://muhammadabdelaal.github.io/Portfolio-template/" target="_blank">See Website</a>
-                    </div>
-                    <div class="footer-github">
-                        <a href="https://github.com/MuhammadAbdelaal/Portfolio-template" target="_blank">See on GitHub</a>
-                    </div>
+                <div class="service">
+                    <i class="fas fa-code icon"></i>
+                    <h3>APP DEVELOPMENT</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</P>
                 </div>
-            </article>
-            <!-- end of item -->
-
-            <!-- item -->
-            <article class="project-item">
-                <img src="images/task_tracker.JPG" alt="image" />
-                <div class="img-text">
-                    <h3>Task Tracking App</h3>
-                    <h6>BootStrap, JavaScript, PHP, and mySql</h6>
+                <div class="service">
+                    <i class="fas fa-palette icon"></i>
+                    <h3>PRODUCT DESIGN</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</P>
                 </div>
-                <div class="img-footer">
-                    <div class="footer-website">
-                        <a href="https://tasktrackerapp.000webhostapp.com/" target="_blank">See Website</a>
-                    </div>
-                    <div class="footer-github">
-                        <a href="https://github.com/MuhammadAbdelaal/Task_Tracker_Approcks" target="_blank">See on GitHub</a>
-                    </div>
+                <div class="service">
+                    <i class="fas fa-cogs icon"></i>
+                    <h3>UI/UX DESIGN</h3>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</P>
                 </div>
-            </article>
-            <!-- end of item -->
-
-            <!-- item -->
-            <article class="project-item">
-                <img src="images/coffee-shop.jpeg" alt="image" />
-                <div class="img-text">
-                    <h3>Coffee Shop</h3>
-                    <h6>Responsive Design, JavaScript, HTML5, and CSS3</h6>
-                </div>
-                <div class="img-footer">
-                    <div class="footer-website">
-                        <a href="https://muhammadabdelaal.github.io/CoffeeShopProject/" target="_blank">See Website</a>
-                    </div>
-                    <div class="footer-github">
-                        <a href="https://github.com/MuhammadAbdelaal/CoffeeShopProject" target="_blank">See on GitHub</a>
-                    </div>
-                </div>
-            </article>
-            <!-- end of item -->
-
-            <!-- item -->
-            <article class="project-item">
-                <img src="images/javascript.jpg" alt="image" />
-                <div class="img-text">
-                    <h3>Maths Games</h3>
-                    <h6>JavaScript, HTML, and CSS</h6>
-                </div>
-                <div class="img-footer">
-                    <div class="footer-website">
-                        <a href="https://muhammadabdelaal.github.io/MathsGames/" target="_blank">See Website</a>
-                    </div>
-                    <div class="footer-github">
-                        <a href="https://github.com/MuhammadAbdelaal/MathsGames" target="_blank">See on GitHub</a>
-                    </div>
-                </div>
-            </article>
-            <!-- end of item -->
-
-            <!-- item -->
-            <article class="project-item">
-                <img src="images/web.jpg" alt="image" />
-                <div class="img-text">
-                    <h3>My Portfolio</h3>
-                    <h6>Responsive Design using CSS grid and flexbox</h6>
-                </div>
-                <div class="img-footer">
-                    <div class="footer-website">
-                        <a href="https://muhammadabdelaal.github.io/" target="_blank">See Website</a>
-                    </div>
-                    <div class="footer-github">
-                        <a href="https://github.com/MuhammadAbdelaal/MuhammadAbdelaal.github.io" target="_blank">See on GitHub</a>
-                    </div>
-                </div>
-            </article>
-            <!-- end of item -->
+            </div>
         </div>
     </section>
-    <!-- end of projects section -->
-
-    <!-- contact section -->
-    <section id="contact">
-        <h2>I seek professionalism</h2>
-        <a href="mailto:trans.muhammad@gmail.com"><button type="button">Contact Me</button></a>
-    </section>
-    <!-- end of contact section -->
-
-    <!--    space section-->
-    <section id="space"></section>
-    <!-- end of space section-->
-
-    <!-- footer section -->
-    <footer id="footer">
-        <div class="footer-text">
-            <p>Copywrite Muammad Reda Abdelaal&copy; 2017 - 2019 All Rights Reserved</p>
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="h2-div">
+            <h2 class="h2">Our Portfolio</h2>
         </div>
+        <div class="portfolio-head-links">
+            <ul>
+                <li class="active"><a href="#">All</a></li>
+                <li><a href="#">Graphic</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Branding</a></li>
+            </ul>
+        </div>
+        <div class="portfolio-body">
+            <div class="img-box">
+                <img src="img/portfolio/1.jpg" alt="1">
+                <a href="#">
+                    <div class="img-box-cover">
+                        <i class="fas fa-link icon"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="img-box">
+                <img src="img/portfolio/2.jpg" alt="2">
+                <a href="#">
+                    <div class="img-box-cover">
+                        <i class="fas fa-link icon"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="img-box">
+                <img src="img/portfolio/3.jpg" alt="3">
+                <a href="#">
+                    <div class="img-box-cover">
+                        <i class="fas fa-link icon"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="img-box">
+                <img src="img/portfolio/4.jpg" alt="4">
+                <a href="#">
+                    <div class="img-box-cover">
+                        <i class="fas fa-link icon"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="img-box">
+                <img src="img/portfolio/5.jpg" alt="5">
+                <a href="#">
+                    <div class="img-box-cover">
+                        <i class="fas fa-link icon"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="img-box">
+                <img src="img/portfolio/6.jpg" alt="6">
+                <a href="#">
+                    <div class="img-box-cover">
+                        <i class="fas fa-link icon"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Numbers Section -->
+    <section class="numbers">
+        <div class="container">
+            <!--   NUMBER  -->
+            <div class="number">
+                <i class="fas fa-users num-icon"></i>
+                <div>200</div>
+                <p>Team members</p>
+            </div>
+            <!--   NUMBER  -->
+            <div class="number">
+                <i class="far fa-copy num-icon"></i>
+                <div>345</div>
+                <p>Complete Projects</p>
+            </div>
+            <!--   NUMBER  -->
+            <div class="number">
+                <i class="fas fa-cloud-download-alt num-icon"></i>
+                <div>18</div>
+                <p>Files Downloaded</p>
+            </div>
+            <!--   NUMBER  -->
+            <div class="number">
+                <i class="fas fa-mug-hot num-icon"></i>
+                <div>12</div>
+                <p>Lines Of Code</p>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="h2-div">
+            <h2 class="h2">Client's Feedback</h2>
+        </div>
+        <div class="testimonials-body">
+            <div class="background"></div>
+            <div class="body-left">
+                <img src="img/testimonial/2.jpg" alt="">
+            </div>
+            <div class="body-right">
+                <h3>Alex ander</h3>
+                <div><span><i class="fas fa-map-marker-alt"></i></span>United</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione beatae, consequatur cumque quos doloremque non id sapiente ullam sequi aut illum voluptatum ducimus inventore itaque, quam quo recusandae saepe voluptatibus.</p>
+                <div>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-footer"></div>
+    </section>
+    <!--  Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <div class="h2-div">
+                <h2 class="h2">Our Blog</h2>
+            </div>
+            <div class="blog-body">
+                <article class="article">
+                    <div class="article-head">
+                        <img src="img/blog/1.jpg" alt="">
+                    </div>
+                    <div class="article-body">
+                        <p>23 November, 2015</p>
+                        <h3>Web Design Blog Post</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="#">READ MORE &rarr;</a>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article-head">
+                        <iframe class="iframe" src="https://www.youtube.com/embed/uVju5--RqtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="article-body">
+                        <p>20 April, 2018</p>
+                        <h3>Web Design Blog Post</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="#">READ MORE &rarr;</a>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article-head">
+                        <img src="img/blog/3.jpg" alt="">
+                    </div>
+                    <div class="article-body">
+                        <p>17 May, 2017</p>
+                        <h3>Web Design Blog Post</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea, quis magnam deserunt eius incidunt repellat molestiae.</p>
+                        <a href="#">READ MORE &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--  Contact Section-->
+    <section class="contact">
+        <div class="container">
+            <div class="h2-div">
+                <h2 class="h2">Contact Us</h2>
+            </div>
+            <div>
+                <form class="contact-form" action="POST">
+                    <div class="nameAndEmail">
+                        <input class="name" type="text" name="name" placeholder="Name">
+                        <input class="email" type="email" name="email" placeholder="Email">
+                    </div>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message for me" rows="8" cols="10"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
         <div class="footer-icons">
-            <a href="https://linkedin.com/in/muhammad-reda-54821670" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:trans.muhammad@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/MuhammadAbdelaal" target="_blank"><i class="fab fa-github-square"></i></a>
+            <i class="fab fa-facebook-f footer-icon"></i>
+            <i class="fab fa-twitter footer-icon"></i>
+            <i class="fab fa-google footer-icon"></i>
+            <i class="fab fa-github footer-icon"></i>
         </div>
-    </footer>
-
-    <!-- end of footer section -->
-    <script src="script.js"></script>
+        <div class="copywrites-text">Copy Right 2019 © <span>Muhammad Reda</span> All Rights Reserved</div>
+    </section>
 </body>
 
 </html>
