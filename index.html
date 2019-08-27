@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-        content="I am a Self-tought Web Developer interested in Computer Science in terms of programming and security.
+    <meta name="description" content="I am a Self-tought Web Developer interested in Computer Science in terms of programming and security.
         Services that I can professionaly provide: Web Development both Front-End and Back-end.
         Languages and frameworks that I use: HTML5, CSS3, JavaScript, Bootstrap4, jQuery, PHP, and Laravel.
         My biggest strengths in this field are troubleshooting & problem-solving, and continuous self-learning.">
-    <meta name="keywords"
-        content="Web Developer, Front-End Web Developer, Back-End Web Developer, Full-Stack Web Developer, Frontend Developer,
+    <meta name="keywords" content="Web Developer, Front-End Web Developer, Back-End Web Developer, Full-Stack Web Developer, Frontend Developer,
         Backend Developer, Fullstack Developer, PHP Developer, Javascript Developer">
     <title>Muhammad Reda - Web Developer</title>
-    <!-- Bootstrap css -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--  My Css  -->
+    <!--  My CSS  -->
     <link rel="stylesheet" href="css/styles.css">
     <!--  Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -25,29 +23,45 @@
 </head>
 
 <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">M.Reda</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Home Section -->
-    <section class="home">
+    <section id="home" class="home">
         <div class="trans-background">
-            <!--navbar-->
-            <nav class="nav">
-                <div class="nav-button-div">
-                    <i class="fas fa-bars"></i>
-                </div>
-                <div class="logo">
-                    <a href="index.html">M.Reda</a>
-                </div>
-                <div class="nav-right">
-                    <ul>
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Testimonial</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+
+
+
             <div class="welcome-message">
                 <span>Hello i'm</span>
                 <h1>Muhammad Reda</h1>
@@ -56,7 +70,7 @@
         </div>
     </section>
     <!-- About Section -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-left">
             <div class="about-img-container">
                 <div class="about-img-shadow"></div>
@@ -96,7 +110,7 @@
         </div>
     </section>
     <!--  Services Section -->
-    <section class="services">
+    <section id="services" class="services">
         <div class="services-container">
             <div class="h2-div">
                 <h2 class="h2">Our Services</h2>
@@ -130,7 +144,7 @@
         </div>
     </section>
     <!-- Portfolio Section -->
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="h2-div">
             <h2 class="h2">Our Portfolio</h2>
         </div>
@@ -194,7 +208,7 @@
         </div>
     </section>
     <!-- Numbers Section -->
-    <section class="numbers">
+    <section id="numbers" class="numbers">
         <div class="container">
             <!--   NUMBER  -->
             <div class="number">
@@ -223,7 +237,7 @@
         </div>
     </section>
     <!--  Blog Section -->
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
             <div class="h2-div">
                 <h2 class="h2">Our Blog</h2>
@@ -271,7 +285,7 @@
         </div>
     </section>
     <!--  Contact Section-->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <div class="h2-div">
                 <h2 class="h2">Contact Us</h2>
@@ -289,7 +303,7 @@
             </div>
         </div>
     </section>
-    <section class="footer">
+    <section id="footer" class="footer">
         <div class="footer-icons">
             <i class="fab fa-facebook-f footer-icon"></i>
             <i class="fab fa-twitter footer-icon"></i>
@@ -300,14 +314,16 @@
     </section>
 
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome js -->
     <script src="js/font-awesome.js"></script>
-    <!-- jQuery -->
+    <!-- jQuery js -->
     <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- popper -->
+    <!-- popper js -->
     <script src="js/popper.min.js"></script>
-    <!-- bootstrap -->
+    <!-- bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- my main js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

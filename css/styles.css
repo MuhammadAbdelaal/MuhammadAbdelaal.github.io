@@ -48,6 +48,23 @@ body {
     top: 67px;
 }
 
+/* Navbar */
+nav {
+    transition-duration: 0.5s;
+}
+.navbar .navbar-brand {
+    text-decoration: none;
+    color: #FF305B;
+    font-weight: bold;
+    font-size: 26px;
+    position: relative;
+    left: 20px;
+}
+
+.navbar .nav-item.active .nav-link{
+    color: #FF305B;
+}
+
 /* HOME */
 .home {
     background-image: url(../img/slider/slider-01.jpg);
@@ -62,38 +79,6 @@ body {
     height: 100vh;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    font-size: 18px;
-    align-items: center;
-    position: relative;
-}
-
-.nav-button-div {
-    position: absolute;
-    right: 8%;
-    top: 12px;
-    color: #fff;
-    padding: 5px;
-    text-align: center;
-    font-size: 24px;
-}
-
-.nav .logo a {
-    text-decoration: none;
-    color: #FF305B;
-    font-weight: bold;
-    font-size: 26px;
-    position: relative;
-    left: 20px;
-}
-
-.nav-right ul {
-    display: none;
-    overflow: hidden;
-}
 
 .welcome-message {
     text-align: center;
@@ -123,59 +108,9 @@ body {
 }
 
 /* HOME MEDIA QUERIES */
-@media screen and (min-width: 480px) {
-    .nav {
-        width: 480px;
-        margin: 0 auto;
-    }
-
-    .nav .logo a {
-        left: 40px
-    }
-
-}
 
 @media screen and (min-width:768px) {
-    .nav {
-        width: 750px;
-    }
-
-    .nav .logo a {
-        left: 12px
-    }
-
-    .nav-button-div {
-        display: none;
-        overflow: hidden;
-    }
-
-    .nav-right ul {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        right: 12px
-    }
-
-    .nav-right ul li {
-        padding: 0 7px;
-        list-style-type: none;
-    }
-
-    .nav-right ul li a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.8);
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        font-size: 16px;
-        letter-spacing: 0.5px;
-        transition: all .5s;
-    }
-
-    .nav-right ul li a:hover,
-    .nav-right ul li a.active {
-        color: rgba(255, 48, 91, 0.7);
-    }
-
+   
     .welcome-message span {
         font-size: 24px;
     }
@@ -186,18 +121,6 @@ body {
 
     .welcome-message p {
         font-size: 26px;
-    }
-}
-
-@media screen and (min-width:992px) {
-    .nav {
-        width: 950px;
-    }
-}
-
-@media screen and (min-width:1200px) {
-    .nav {
-        width: 1170px;
     }
 }
 
