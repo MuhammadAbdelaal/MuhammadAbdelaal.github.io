@@ -7,7 +7,6 @@
 
 body {
     font-family: Roboto, sans-serif;
-    ;
 }
 
 .clr {
@@ -51,7 +50,7 @@ body {
 
 /* HOME */
 .home {
-    background-image: url(img/slider/slider-01.jpg);
+    background-image: url(../img/slider/slider-01.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
