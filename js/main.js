@@ -1,6 +1,12 @@
 
 
 
+/**
+ * ############################################################################
+ * ############################# Navbar logic #################################
+ * ############################################################################
+ */
+$('nav li').data('clicked', false);
 $(window).scroll(function () { //on scroll change navbar background color and nav links colors
     let scroll = $(window).scrollTop();
     let sections = $('section');
@@ -14,7 +20,7 @@ $(window).scroll(function () { //on scroll change navbar background color and na
          * change navbar background to dark
          * else change navbar background to transparent
          */
-        if (scroll > ($(`#${sectionsArray[1].id}`).offset().top)-20) { 
+        if (scroll > ($(`#${sectionsArray[1].id}`).offset().top)-30) { 
             $('nav').css('backgroundColor', 'rgba(25, 25, 25, 0.95)'); 
         } else {
             $('nav').css('backgroundColor', 'transparent');
@@ -26,20 +32,39 @@ $(window).scroll(function () { //on scroll change navbar background color and na
          * add active class to the nav link corrosponding to that section
          * and remove the same class from its siblings
          */
-        if (scroll > $(`#${id}`).offset().top) {
-            $(`nav a[href='#${id}']`).parent().addClass('active');
-            $(`nav a[href='#${id}']`).parent().siblings().removeClass('active');
+        if (scroll > ($(`#${id}`).offset().top)  - 250) {
+            
+            if($('nav li').data('clicked') == false) { // ensure that this scroll not driven by clicking a nav item
+                $(`nav a[href='#${id}']`).parent().addClass('active');
+                $(`nav a[href='#${id}']`).parent().siblings().removeClass('active');              
+            }
         }
     
     }
 });
 
-/**
- * on clicking any nav link 
- * scroll to its corrosponding section with animation
- */
-$('nav a').click(function(){
-    let aHref = $(this).attr("href");
-    let offset = ($(aHref).offset().top + 1);
-    $('body, html').animate({scrollTop: offset}, 600);
+$('nav a').click(function(){ // on clicking any nav link
+    
+    activeLink(this); // add active class to the click nav item and remove the same class from its siblings
+    animateScroll(this); //scroll to its corrosponding section with animation
+    
+    $('nav li').data('clicked', true); // set date clicked to true so not add active class on scroll
+    setTimeout(function(){ // then after 0.5 second make date clicked to flase again to work with scroll
+        $('nav li').data('clicked', false);
+    }, 500);
 });
+
+function animateScroll(element) {
+    let aHref = $(element).attr("href");
+    let offset = ($(aHref).offset().top -15);
+    $('body, html').animate({scrollTop: offset}, 600);
+}
+function activeLink(element) {
+    $(element).parent().addClass('active');
+    $(element).parent().siblings().removeClass('active');
+}
+/**
+ * ############################################################################
+ * ########################### End of Navbar logic ############################
+ * ############################################################################
+ */
