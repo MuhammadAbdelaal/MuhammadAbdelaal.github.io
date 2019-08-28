@@ -24,7 +24,7 @@ $(window).scroll(function () { //on scroll change navbar background color and na
          * when reach top offset of any section
          * if scroll exceeded it
          * add active class to the nav link corrosponding to that section
-         * and remove the sama class from its siblings
+         * and remove the same class from its siblings
          */
         if (scroll > $(`#${id}`).offset().top) {
             $(`nav a[href='#${id}']`).parent().addClass('active');
@@ -35,14 +35,11 @@ $(window).scroll(function () { //on scroll change navbar background color and na
 });
 
 /**
- * on clicking any nav link scroll to its corrosponding section with animation
- * and add active class to the nav item of this link
- * and remove active class from its parents' sibilins if any
+ * on clicking any nav link 
+ * scroll to its corrosponding section with animation
  */
 $('nav a').click(function(){
-    $(this).parent().addClass('active');
-    $(this).parent().siblings().removeClass('active');
     let aHref = $(this).attr("href");
-    let offset = ($(aHref).offset().top - 10);
-    $('body, html').animate({scrollTop: offset}, 1000);
+    let offset = ($(aHref).offset().top + 1);
+    $('body, html').animate({scrollTop: offset}, 600);
 });
