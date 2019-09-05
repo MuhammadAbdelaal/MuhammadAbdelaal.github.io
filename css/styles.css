@@ -14,7 +14,7 @@ body {
 }
 
 .h2 {
-    color: #333333;
+    color: #343A40;
     font-size: 34px;
     font-weight: bold;
 }
@@ -30,8 +30,8 @@ body {
     height: 5px;
     line-height: 1px;
     font-size: 7px;
-    border-top: 1px solid #ff305b;
-    border-bottom: 1px solid #ff305b;
+    border-top: 1px solid #17A2B8;
+    border-bottom: 1px solid #17A2B8;
     position: relative;
     color: transparent;
     top: 0;
@@ -43,19 +43,18 @@ body {
     font-size: 10px;
     font-weight: 700;
     height: 8px;
-    color: #ff305b;
+    color: #17A2B8;
     position: relative;
     top: 72px;
 }
 
 /* Navbar */
 nav {
-    background-color: rgba(0, 0, 0, 0.8);
-    transition-duration: 0.5s;
+    background-color: #343A40;
+    transition-duration: 1.5s;
 }
 .navbar .navbar-brand {
     text-decoration: none;
-    color: #FF305B;
     font-weight: bold;
     font-size: 26px;
     position: relative;
@@ -63,14 +62,16 @@ nav {
 }
 
 .navbar .nav-item .nav-link {
-    color: rgba(255, 255, 255,0.9);
+    color: rgba(255, 255, 255,0.7);
+    font-weight: 100;
 }
 .navbar .nav-item.active .nav-link{
-    color: #FF305B;
+    color: #fff;
+    font-weight: bold;
 }
 
 .navbar .nav-item.activeClick .nav-link {
-    color: #FF305B;
+    color: #DC3545;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,8 +89,11 @@ nav {
     height: 100vh;
 }
 
+/* .home #word {
+    color: #DC3545;
+} */
 .trans-background {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100vh;
 }
 
@@ -111,7 +115,7 @@ nav {
 
 .welcome-message h1 {
     font-size: 38px;
-    color: #FF305B;
+    color: #DC3545;
     font-weight: bold;
 }
 
@@ -184,7 +188,7 @@ nav {
 }
 
 .about-img-cover a:hover {
-    color: #ff305b;
+    color: #DC3545;
 }
 
 .about-body h2 {
@@ -194,7 +198,7 @@ nav {
 
 .about-body h2 span {
     margin-right: 8px;
-    color: #ff305b;
+    color: #DC3545;
 }
 
 .about-body p {
@@ -209,42 +213,6 @@ nav {
     margin: 10px auto 0;
 }
 
-.about-body ul {
-    margin-top: 10px;
-    padding: 5px 0;
-    line-height: 16px;
-    font-weight: 400;
-    color: rgb(85, 85, 85);
-    font-family: 'Roboto', sans-serif;
-    list-style-type: none;
-}
-
-.about-body ul li {
-    padding: 5px 0;
-    margin: 5px 0;
-}
-
-.about-body ul li span {
-    font-weight: 600;
-    color: rgb(51, 51, 51);
-}
-
-.about-footer a {
-    background-color: #ff305b;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-right: 10px;
-    color: #fff;
-    font-size: 100%;
-    transition: all .5s;
-}
-
-.about-footer a:hover {
-    background-color: #EC2403;
-    cursor: pointer;
-}
 
 
 /* ABOUT MEDIA QUERIES */
@@ -255,42 +223,20 @@ nav {
     }
 
     .about-left {
-        margin-top: 20px;
-        width: 50%;
+        margin-top: 32px;
+        width: 40%;
         float: left;
         padding: 0 15px;
     }
 
     .about-right {
-        width: 50%;
+        width: 60%;
         float: right;
         padding: 0 15px;
     }
 
     .about-body div.hr {
         margin-bottom: 0;
-    }
-
-    .about-body ul {
-        margin-top: 0;
-        padding-top: 0;
-        font-size: 14px;
-        overflow: auto;
-    }
-
-    .about-body ul li {
-        display: block;
-        padding-bottom: 1px;
-    }
-
-    .about-body ul li:nth-child(odd) {
-        float: left;
-        width: 40%;
-    }
-
-    .about-body ul li:nth-child(even) {
-        float: right;
-        width: 60%;
     }
 
     .about-footer button {
@@ -303,10 +249,9 @@ nav {
 
 
     .about-left {
-        margin-top: 0;
         width: 35%;
         text-align: right;
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .about-right {
@@ -341,15 +286,6 @@ nav {
         margin: 20px auto;
     }
 
-    .about-left {
-        width: 31%;
-        margin-left: 75px;
-    }
-
-    .about-right {
-        width: 59%;
-    }
-
 }
 
 /* SERVICES SECTION */
@@ -360,7 +296,7 @@ nav {
 }
 
 .service h3 {
-    color: #333333;
+    color: #343A40;
 }
 
 .services-body {
@@ -372,7 +308,7 @@ nav {
     padding: 10px;
     line-height: 25px;
     margin: 20px 0;
-    transition: all .5s;
+    transition: all .8s ease-out;
 }
 
 .service * {
@@ -385,8 +321,8 @@ nav {
 
 .service .icon {
     font-size: 30px;
-    color: #ff305b;
-    transition: all .5s;
+    color: #DC3545;
+    transition: all .8s ease-out;
 }
 
 .service p {
@@ -400,7 +336,7 @@ nav {
 }
 
 .service:hover .icon {
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 
 /* SERVICES MEDIA QUERIES */
@@ -419,12 +355,12 @@ nav {
 /* Works Start */
 /*###################################################################*/
 .works .nav-item .nav-link {
-    color: #ff305b;
+    color: #343A40;
 }
 
 .works .nav-item .nav-link.active {
-    color: #fff;
-    background-color: #ff305b;
+    color: #DC3545;
+    background-color: transparent;
 }
 
 .works .work-item {
@@ -458,12 +394,11 @@ nav {
 }
 
 .works .work-item img {
-    width: 100%;
-    transition: all 0.3s;
+    transition: all 1.5s ease-out;
 }
 
 .works .work-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 .works .work-item:hover .caption {
@@ -473,8 +408,9 @@ nav {
 
 .works .work-item:hover .caption div {
     transition-delay: .2s;
-    transform: scale(1);
+    transform: scale(1.3);
 }
+
 
 .works .work-item:hover .caption p {
     transition-delay: .5s;
@@ -495,7 +431,7 @@ nav {
     text-align: center;
     margin-bottom: 30px;
     padding: 10px;
-    transition: all .5s;
+    transition: all .8s ease-out;
 }
 
 .skills-item:hover {
@@ -512,7 +448,7 @@ nav {
     font-size: 26px;
     letter-spacing: 2px;
     margin: 10px 0;
-    color: #ff305b;
+    color: #DC3545;
 }
 
 .skills-item p {
@@ -528,10 +464,11 @@ nav {
 }
 
 
+
 /* FOOTER */
 .footer {
     padding: 50px 30px;
-    background-color: #333333;
+    background-color: #343A40;
 }
 
 .footer {
@@ -557,13 +494,8 @@ nav {
 }
 
 .footer-icon:hover {
-    color: #ff305b;
+    color: #DC3545;
     cursor: pointer;
-}
-
-
-.footer .copywrites-text span {
-    color: #ff305b;
 }
 
 

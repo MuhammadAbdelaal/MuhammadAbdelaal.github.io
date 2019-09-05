@@ -1,8 +1,5 @@
 
-
-
 /**
- * ############################################################################
  * ############################# Navbar logic #################################
  * ############################################################################
  */
@@ -20,8 +17,8 @@ $(window).scroll(function () { //on scroll change navbar background color and na
          * change navbar background to dark
          * else change navbar background to transparent
          */
-        if (scroll > ($(`#${sectionsArray[1].id}`).offset().top)-30) { 
-            $('nav').css('backgroundColor', 'rgba(25, 25, 25, 0.95)'); 
+        if (scroll > ($(`#${sectionsArray[1].id}`).offset().top)-50) { 
+            $('nav').css('backgroundColor', '#343A40'); 
         } else {
             $('nav').css('backgroundColor', 'transparent');
         }
@@ -64,7 +61,51 @@ function activeLink(element) {
     $(element).parent().siblings().removeClass('active');
 }
 /**
- * ############################################################################
  * ########################### End of Navbar logic ############################
  * ############################################################################
+ */
+
+
+
+ 
+/**
+ * ############################# Typewriter logic #################################
+ * ################################################################################
+ */
+const word = document.getElementById('word');
+const word2 = document.getElementById('word2');
+
+let typewriter = new Typewriter(word, {
+    loop: true
+});
+
+let typewriter2 = new Typewriter(word2, {
+    loop: true
+});
+
+typewriter2.typeString('Front-end')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Back-end')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Full-stack')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+
+typewriter.typeString('Front-end')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Back-end')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Full-stack')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+
+ /**
+ * ########################### End of Typewriter logic ############################
+ * ################################################################################
  */
