@@ -104,6 +104,10 @@ if (mq.matches) { // only if screen is larger than @768px
 
         }
     });
+} else { // hide the collapsable nav menu on clicking any nav item because its mobile mode now
+    $('nav li').click(function () {  
+        $('.navbar-collapse').collapse('hide');
+    });
 }
 
 
