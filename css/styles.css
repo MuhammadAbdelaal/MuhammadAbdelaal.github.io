@@ -50,8 +50,8 @@ body {
 
 /* Navbar */
 nav {
-    background-color: #343A40;
-    transition-duration: 1.5s;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition-duration: 1.2s;
 }
 .navbar .navbar-brand {
     text-decoration: none;

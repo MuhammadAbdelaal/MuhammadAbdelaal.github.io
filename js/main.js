@@ -64,41 +64,48 @@ const projects = [
  * ############################# Navbar Start #################################
  */
 $('nav li').data('clicked', false);
-$(window).scroll(function () { //on scroll change navbar background color and nav links colors
-    let scroll = $(window).scrollTop();
-    let sections = $('section');
-    let sectionsArray = Array.from(sections);
-    let id;
 
-    for (let i = 0; i < sectionsArray.length; i++) {
-        id = sectionsArray[i].id;
-        /**
-         * when reach top offset of about section
-         * change navbar background to dark
-         * else change navbar background to transparent
-         */
-        if (scroll > ($(`#${sectionsArray[1].id}`).offset().top) - 50) {
-            $('nav').css('backgroundColor', '#343A40');
-        } else {
-            $('nav').css('backgroundColor', 'transparent');
-        }
+var mq = window.matchMedia("(min-width: 700px)");
+if (mq.matches) { // only if screen is larger than @768px
+    $(window).scroll(function () { //on scroll change navbar background color and nav links colors
+        let scroll = $(window).scrollTop();
+        let sections = $('section');
+        let sectionsArray = Array.from(sections);
+        let id;
 
-        /**
-         * when reach top offset of any section
-         * if scroll exceeded it
-         * add active class to the nav link corrosponding to that section
-         * and remove the same class from its siblings
-         */
-        if (scroll > ($(`#${id}`).offset().top) - 250) {
-
-            if ($('nav li').data('clicked') == false) { // ensure that this scroll not driven by clicking a nav item
-                $(`nav a[href='#${id}']`).parent().addClass('active');
-                $(`nav a[href='#${id}']`).parent().siblings().removeClass('active');
+        for (let i = 0; i < sectionsArray.length; i++) {
+            id = sectionsArray[i].id;
+            /**
+             * when reach top offset of about section
+             * change navbar background to dark
+             * else change navbar background to transparent
+             */
+            if (scroll > ($(`#${sectionsArray[1].id}`).offset().top) - 50) {
+                $('nav').css('backgroundColor', '#000');
+            } else {
+                $('nav').css('backgroundColor', 'transparent');
             }
-        }
 
-    }
-});
+
+
+            /**
+             * when reach top offset of any section
+             * if scroll exceeded it
+             * add active class to the nav link corrosponding to that section
+             * and remove the same class from its siblings
+             */
+            if (scroll > ($(`#${id}`).offset().top) - 250) {
+
+                if ($('nav li').data('clicked') == false) { // ensure that this scroll not driven by clicking a nav item
+                    $(`nav a[href='#${id}']`).parent().addClass('active');
+                    $(`nav a[href='#${id}']`).parent().siblings().removeClass('active');
+                }
+            }
+
+        }
+    });
+}
+
 
 $('nav a').click(function () { // on clicking any nav link
 
@@ -120,6 +127,7 @@ function activeLink(element) {
     $(element).parent().addClass('active');
     $(element).parent().siblings().removeClass('active');
 }
+
 /**
  * ########################### End of Navbar ##################################
  * ############################################################################
@@ -176,7 +184,6 @@ typewriter2.typeString('Front-end')
  * ################################################################################
  * ############################# Works Section Start ###########################
 */
-
 fillAllWorksRow($('#all-works')); //all works
 fillWorksRows($('#frontend-works'), 'frontend'); //frontend
 fillWorksRows($('#backend-works'), 'backend'); //backend
@@ -184,9 +191,10 @@ fillWorksRows($('#fullstack-works'), 'backend'); //fullstack
 
 
 function fillWorksRows(row, type) { //to fill different works rows inside works section
+    shuffle(projects);
     let temp = ``;
-    for(let i = 0; i < projects.length; i ++) {
-        if(projects[i].type == type) {
+    for (let i = 0; i < projects.length; i++) {
+        if (projects[i].type == type) {
             temp += `<div class="col-lg-4 col-md-6 col-sm-12">
             <div class="work-item">
                 <img class="img-fluid" src='${projects[i].imagURl}' alt="1">
@@ -206,14 +214,14 @@ function fillWorksRows(row, type) { //to fill different works rows inside works 
         </div>`
         }
     }
-    
+
     row.html(temp);
 }
 
 function fillAllWorksRow(row) { //to fill all works rows inside works section
     let temp = ``;
-    for(let i = 0; i < projects.length; i ++) {
-            temp += `<div class="col-lg-4 col-md-6 col-sm-12">
+    for (let i = 0; i < projects.length; i++) {
+        temp += `<div class="col-lg-4 col-md-6 col-sm-12">
             <div class="work-item">
                 <img class="img-fluid" src='${projects[i].imagURl}' alt="1">
                 <div class="caption">
@@ -231,8 +239,39 @@ function fillAllWorksRow(row) { //to fill all works rows inside works section
             </div>
         </div>`
     }
-    
+
     row.html(temp);
 }
+
+/**
+ * Randomly shuffle an array
+ * https://stackoverflow.com/a/2450976/1293256
+ * @param  {Array} array The array to shuffle
+ */
+function shuffle(array) {
+
+    var currentIndex = array.length;
+    var temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+};
+
+/**
+* ########################### Works Section End ############################
+* ################################################################################
+*/
+
 
 
