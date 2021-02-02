@@ -5,6 +5,14 @@
 const projects = [
     {
         type: 'frontend',
+        name: 'Landing Page Udacity',
+        imagURl: 'img/works/5.jpg',
+        desc: 'Landing Page Project, 1st project in Udaciyt Nanodegree Program',
+        githubUrl: 'https://github.com/MuhammadAbdelaal/landingPageUdacity1stProject',
+        url: 'https://muhammadabdelaal.github.io/landingPageUdacity1stProject/',
+    },
+    {
+        type: 'frontend',
         name: 'The GiftsShop',
         imagURl: 'img/works/3.jpg',
         desc: 'Angular8, Sass (still under development)',
