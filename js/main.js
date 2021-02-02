@@ -4,6 +4,15 @@
 
 const projects = [
     {
+        type: 'backend',
+        name: 'Weather API Udacity',
+        imagURl: 'img/works/4.jpg',
+        desc: 'Weather API is the second project in udicity nanodegree program using Async JavaScript to fetch data from Weather API',
+        githubUrl: 'https://github.com/MuhammadAbdelaal/WeatherAPIUdacity2ndProject',
+        url: 'https://github.com/MuhammadAbdelaal/WeatherAPIUdacity2ndProject',
+    },
+    {
+        
         type: 'frontend',
         name: 'Landing Page Udacity',
         imagURl: 'img/works/5.jpg',
@@ -42,14 +51,6 @@ const projects = [
         desc: 'Application to track tasks (still under development) BootStrap, JavaScript, PHP, and mySql',
         githubUrl: 'https://github.com/MuhammadAbdelaal/Task_Tracker',
         url: 'https://tasktrackerapp.000webhostapp.com/',
-    },
-    {
-        type: 'backend',
-        name: 'Weather API Udacity',
-        imagURl: 'img/works/4.jpg',
-        desc: 'Weather API is the second project in udicity nanodegree program using Async JavaScript to fetch data from Weather API',
-        githubUrl: 'https://github.com/MuhammadAbdelaal/WeatherAPIUdacity2ndProject',
-        url: 'https://github.com/MuhammadAbdelaal/WeatherAPIUdacity2ndProject',
     },
     {
         type: 'frontend',
