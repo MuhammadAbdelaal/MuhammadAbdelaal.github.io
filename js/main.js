@@ -45,12 +45,12 @@ const projects = [
         url: 'https://muhammadabdelaal.github.io/CoffeeShopProject/',
     },
     {
-        type: 'backend',
+        type: 'fullstack',
         name: 'Task Tracking App',
         imagURl: 'img/works/4.jpg',
         desc: 'Application to track tasks (still under development) BootStrap, JavaScript, PHP, and mySql',
         githubUrl: 'https://github.com/MuhammadAbdelaal/Task_Tracker',
-        url: 'https://tasktrackerapp.000webhostapp.com/',
+        url: 'https://github.com/MuhammadAbdelaal/Task_Tracker',
     },
     {
         type: 'frontend',
@@ -208,7 +208,7 @@ typewriter2.typeString('Front-end')
 fillAllWorksRow($('#all-works')); //all works
 fillWorksRows($('#frontend-works'), 'frontend'); //frontend
 fillWorksRows($('#backend-works'), 'backend'); //backend
-fillWorksRows($('#fullstack-works'), 'backend'); //fullstack
+fillWorksRows($('#fullstack-works'), 'fullstack'); //fullstack
 
 
 function fillWorksRows(row, type) { //to fill different works rows inside works section
